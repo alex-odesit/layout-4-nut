@@ -311,3 +311,12 @@ window.addEventListener('click', e => { // при клике в любом ме�
 headerGoBagLink.classList.add('display-none');
    }
 })
+
+
+let parolOpen = document.getElementById('parol-open');
+let parolTruuEmail = document.querySelector('.parol__truu-email');
+if(parolOpen!=null){
+   parolOpen.addEventListener('click',()=>{
+      parolTruuEmail.classList.add('active');
+   })
+}

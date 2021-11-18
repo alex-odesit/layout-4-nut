@@ -7693,6 +7693,7 @@ nav * {
   list-style-type: none;
 }
 
+.parol-section__link,
 .order__link-continue,
 .bag-section-link__catalog,
 .header__go-bag-link,
@@ -7721,6 +7722,7 @@ nav * {
   cursor: pointer;
 }
 
+.parol-section__link:hover,
 .order__link-continue:hover,
 .bag-section-link__catalog:hover,
 .header__go-bag-link:hover,
@@ -12181,10 +12183,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.order__contact-input:last-of-type {
-  margin-bottom: 45px;
-}
-
 .order__contact-input:hover {
   background: rgba(51, 125, 90, 0.1);
 }
@@ -12294,6 +12292,91 @@ body {
 .order__tabs.active {
   -webkit-animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.parol-section {
+  padding: 110px 0px 100px 0px;
+  text-align: center;
+}
+
+.parol-section i {
+  color: #337D5A;
+  margin-right: 10px;
+}
+
+.parol-section__title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1A2F3F;
+  margin-bottom: 13px;
+}
+
+.parol-section__remember {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1A2F3F;
+  margin-bottom: 10px;
+}
+
+.parol-section__subtitle {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.parol-section__subtitle span {
+  font-family: "Raleway";
+  color: #1A2F3F;
+}
+
+.parol-section__input {
+  width: 410px;
+  height: 47px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  padding-left: 13px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  color: #1A2F3F;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.parol-section__link {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px 50px;
+}
+
+.parol__truu-email {
+  margin-top: 42px;
+}
+
+.parol__truu-email {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.parol__truu-email.active {
+  -webkit-animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.offer-wholesale__subtitle_thank {
+  max-width: 450px;
 }
 
 @media (min-width: 576px) {
@@ -19352,6 +19435,14 @@ body {
   .order__tabs {
     text-align: center;
   }
+
+  .parol-section {
+    padding: 100px 0px 50px 0px;
+  }
+
+  .parol__truu-email {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -19643,6 +19734,25 @@ body {
 
   .registration-section__adress-inputs_order {
     width: 100%;
+  }
+
+  .parol-section__input {
+    width: 100%;
+  }
+
+  .parol-section__link {
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
