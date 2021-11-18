@@ -1,3 +1,4 @@
+
 function testWebP(callback) {
 
    var webP = new Image();
@@ -87,41 +88,6 @@ new Swiper('.swiper-news', {
    }
 });
 
-
-let path = window.location.pathname;
-let page = path.split("/").pop();
-let contacts = document.querySelector('.contacts');
-let ubhdpLink = document.querySelectorAll('.project-ubhdp__link');
-let ubhdpSection = document.querySelectorAll('.project-ubhdp');
-let gallerySection02 = document.querySelectorAll('.gallery-section02');
-let ecoProductSection = document.querySelector('.eco-product');
-let numbersSection = document.querySelector('.numbers');
-let offerPayment = document.querySelector('.offer-payment');
-if(page=='about.html'){
-   ubhdpLink.classList.add('display-none');
-   ubhdpSection.classList.add('pading-none-background');
-   ecoProductSection.classList.add('eco-product-section');
-}else if(page=='news-articl.html'){
-   contacts.classList.add('contacts__backgroaund');
-}else if(page=='gallery.html'){
-   for(let i =0; i<ubhdpLink.length;i++){
-      ubhdpLink[i].classList.add('display-none');
-      ubhdpSection[i].classList.add('pading-none');
-      gallerySection02[i].classList.add('background-none');
-   }
-   contacts.classList.add('contacts__backgroaund');
-}else if(page=='wholesale.html'){
-   numbersSection.classList.add('numbers-background');
-   ecoProductSection.classList.add('eco-product-background-wholesale');
-}else if(page=='payment.html'){
-   numbersSection.classList.add('numbers-background');
-}
-else if(page=='catalog.html'){
-   offerPayment.classList.add('offer-payment-backgraund');
-   contacts.classList.add('contacts__backgroaund');
-}
-
-
 let tabsWrapper = document.querySelectorAll('.wholesale-row__tab');
 let cartItems = document.querySelectorAll('.wholesale-row__cart-wrapper');
 
@@ -143,6 +109,49 @@ tabsWrapper.forEach(function(item){
    });
 });
 
+
+let registrationSectionTab = document.querySelectorAll('.registration-section__tab');
+let registrationSectionItemBodyRow = document.querySelectorAll('.registration-section__item-body-row');
+registrationSectionTab.forEach(function(item){
+   item.addEventListener('click', function(){
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute('data-tab');
+      let currentTab = document.querySelector(tabId);
+
+      registrationSectionTab.forEach(function(item){
+         item.classList.remove('active');
+      });
+      registrationSectionItemBodyRow.forEach(function(item){
+         item.classList.remove('active');
+      });
+
+      currentBtn.classList.add('active');
+      currentTab.classList.add('active');
+   });
+});
+
+let registrationSectionFopLawyerItem = document.querySelectorAll('.registration-section__fop-lawyer-item');
+let registrationSectionTerminal = document.querySelectorAll('.registration-section__terminals');
+registrationSectionFopLawyerItem.forEach(function(item){
+   item.addEventListener('click', function(){
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute('data-tab');
+      let currentTab = document.querySelector(tabId);
+
+      registrationSectionFopLawyerItem.forEach(function(item){
+         item.classList.remove('active');
+      });
+      registrationSectionTerminal.forEach(function(item){
+         item.classList.remove('active');
+      });
+
+      currentBtn.classList.add('active');
+      currentTab.classList.add('active');
+   });
+});
+
+
+
 let filterWrapperArows = document.querySelectorAll('.filter-wrapper__arows');
 filterWrapperArows.forEach(function(items){
    items.addEventListener('click', function(){
@@ -151,4 +160,138 @@ filterWrapperArows.forEach(function(items){
       })
       items.classList.add('active');
    })
+})
+let tabsWrapperProduct = document.querySelectorAll('.product-tabs__item');
+let cartItemsProduct = document.querySelectorAll('.product-tabs-body');
+
+tabsWrapperProduct.forEach(function(item){
+   item.addEventListener('click', function(){
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute('data-tab');
+      let currentTab = document.querySelector(tabId);
+
+      tabsWrapperProduct.forEach(function(item){
+         item.classList.remove('active');
+      });
+      cartItemsProduct.forEach(function(item){
+         item.classList.remove('active');
+      });
+
+      currentBtn.classList.add('active');
+      currentTab.classList.add('active');
+   });
+});
+$("nav li a").click(function () {
+   elementClick = $(this).attr("href");
+   destination = $(elementClick).offset().top;
+   $("body,html").animate({scrollTop: destination }, 800);
+});
+
+let productsMore = document.getElementById('products__more');
+let productsMoreContent = document.getElementById('products__more-content');
+let productsClose = document.getElementById('products__close');
+
+if(productsMore != null){
+   productsMore.addEventListener('click', () =>{
+      productsMore.classList.add('display-none');
+      productsMoreContent.classList.remove('display-none');
+      productsClose.classList.remove('display-none');
+   });
+}
+
+if(productsClose != null){
+   productsClose.addEventListener('click', () =>{
+      let widthWindow = window.screen.width;
+      productsMore.classList.remove('display-none');
+      productsMoreContent.classList.add('display-none');
+      productsClose.classList.add('display-none');
+      if(widthWindow>992){
+         window.scrollBy(0, -1100);
+      } else if(widthWindow>576){
+         window.scrollBy(0, -1680);
+      } else if(widthWindow>374){
+         window.scrollBy(0, -1920);
+      }
+   });
+}
+
+
+
+let registrationSectioInputs = document.querySelectorAll('.registration-section__adress-inputs-wrapper');
+
+registrationSectioInputs.forEach(function(items){
+   items.addEventListener('click', function(){
+      items.classList.toggle('active');
+   })
+})
+registrationSectioInputs.forEach(function(items){
+   items.addEventListener('focusout', function(){
+      items.classList.remove('active');
+   })
+})
+
+let registrationSectionAgree = document.querySelector('.registration-section__agree');
+if(registrationSectionAgree != null){
+   registrationSectionAgree.addEventListener('click',() =>{
+      registrationSectionAgree.classList.toggle('active');
+   })
+}
+
+let registrationSectionFop = document.querySelector('.registration-section__fop');
+if(registrationSectionFop != null){
+   registrationSectionFop.addEventListener('click',() =>{
+      registrationSectionFop.classList.toggle('active');
+   })
+}
+
+
+let natureCsroll = document.getElementById('nature-csroll');
+if(natureCsroll != null){
+   new SimpleBar(natureCsroll,{
+      autoHide: false
+   });
+}
+
+let headerBagCounterNumber = document.querySelector('.header__bag-counter-number');
+let i = 1;
+let arrowRight = document.querySelector('.arrow-right');
+let arrowLeft = document.querySelector('.arrow-left');
+let headerBagCross = document.querySelector('.header__bag-cross');
+let headerBagItem = document.querySelector('.header__bag-item');
+let headerBag = document.querySelector('.header__bag');
+let headerBagHover = document.querySelector('.header__bag-hover');
+let headerGoBagLink = document.querySelector('.header__go-bag-link');
+arrowRight.addEventListener('click',() =>{
+   i++;
+   headerBagCounterNumber.innerHTML=i;
+});
+arrowLeft.addEventListener('click',() =>{
+   if(i!=1){
+     i--; 
+     headerBagCounterNumber.innerHTML=i;
+   }
+});
+headerBagCross.addEventListener('click',() =>{
+   headerBagItem.classList.add('display-none');
+});
+
+
+let productsBottomLink = document.querySelector('.products__bottom-link');
+if(productsBottomLink != null){
+   productsBottomLink.addEventListener('click',() =>{
+      headerBagItem.classList.remove('display-none');
+      headerBagHover.classList.add('scale-up-hor-right');
+      headerGoBagLink.classList.remove('display-none');
+   });
+};
+headerBag.addEventListener('mouseenter',()=>{
+   headerBagHover.classList.add('scale-up-hor-right');
+   headerGoBagLink.classList.remove('display-none');
+});
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+   const target = e.target // находим элемент, на котором был клик
+   if (!target.closest('.header__bag-hover') && !target.closest('.products__bottom-link')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      headerBagHover.classList.remove('scale-up-hor-right');
+headerGoBagLink.classList.add('display-none');
+   }
 })
