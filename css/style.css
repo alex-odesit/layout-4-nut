@@ -7693,6 +7693,7 @@ nav * {
   list-style-type: none;
 }
 
+.order__link-continue,
 .bag-section-link__catalog,
 .header__go-bag-link,
 .registration-section__btn,
@@ -7720,6 +7721,7 @@ nav * {
   cursor: pointer;
 }
 
+.order__link-continue:hover,
 .bag-section-link__catalog:hover,
 .header__go-bag-link:hover,
 .registration-section__btn:hover,
@@ -7833,6 +7835,9 @@ body {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.02em;
+}
+
+.header__start a {
   color: #323232;
 }
 
@@ -11548,7 +11553,7 @@ body {
   display: block;
   width: 15px;
   height: 15px;
-  border: 2px solid #337D5A;
+  border: 2px solid #337d5a;
   border-radius: 50%;
   margin-right: 11px;
   display: -webkit-box;
@@ -11565,7 +11570,7 @@ body {
 .registration-section__fop-lawyer-item .circle span {
   width: 0px;
   height: 0px;
-  background-color: #337D5A;
+  background-color: #337d5a;
   display: block;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease;
@@ -11609,24 +11614,24 @@ body {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.01em;
-  color: #1A2F3F;
+  color: #1a2f3f;
   margin: 20px 0;
 }
 
 .error-wrapper__main-page {
   padding: 14px 20px;
   display: inline-block;
-  border: 1.5px solid #337D5A;
+  border: 1.5px solid #337d5a;
   font-weight: bold;
   font-size: 16px;
-  color: #337D5A;
+  color: #337d5a;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .error-wrapper__main-page:hover {
-  background-color: #337D5A;
+  background-color: #337d5a;
   color: #fff;
 }
 
@@ -11644,7 +11649,7 @@ body {
   right: 0;
   background-color: #fff;
   z-index: 100;
-  border: 1.5px solid #337D5A;
+  border: 1.5px solid #337d5a;
   padding: 30px 31px 23px 31px;
   width: 468px;
   visibility: hidden;
@@ -11709,7 +11714,7 @@ body {
 .header__bag-title {
   font-family: "Montserrat";
   line-height: 19px;
-  color: #1A2F3F;
+  color: #1a2f3f;
   cursor: default;
   margin-right: 40px;
 }
@@ -11725,7 +11730,7 @@ body {
 }
 
 .header__bag-counter i {
-  color: #8A8A8A;
+  color: #8a8a8a;
   font-size: 12px;
   cursor: pointer;
 }
@@ -11758,7 +11763,7 @@ body {
 .header__bag-cost {
   font-family: "Montserrat";
   line-height: 32px;
-  color: #1A2F3F;
+  color: #1a2f3f;
   cursor: default;
   margin: 0 35px;
 }
@@ -11770,7 +11775,7 @@ body {
 .header__bag-cross i {
   position: relative;
   z-index: -1;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 .header__bag-cross i::after {
@@ -11797,7 +11802,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
-  color: #1A2F3F;
+  color: #1a2f3f;
 }
 
 .header__go-bag-cost {
@@ -11805,7 +11810,7 @@ body {
   font-weight: bold;
   font-size: 22px;
   line-height: 32px;
-  color: #337D5A;
+  color: #337d5a;
   margin: 0px 5px 0px 5px;
   cursor: default;
 }
@@ -11815,7 +11820,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 32px;
-  color: #337D5A;
+  color: #337d5a;
   margin-right: 10px;
   padding-top: 3px;
 }
@@ -11842,7 +11847,7 @@ body {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: 0.01em;
-  color: #1A2F3F;
+  color: #1a2f3f;
 }
 
 .bag-section__my-manager {
@@ -11856,7 +11861,7 @@ body {
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 0.01em;
-  color: #1A2F3F;
+  color: #1a2f3f;
 }
 
 .bag-section__number {
@@ -11867,7 +11872,7 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #337D5A;
+  color: #337d5a;
 }
 
 .bag-section__number:hover {
@@ -11876,16 +11881,16 @@ body {
 
 .bag-table-main {
   padding: 22px 25px;
-  background: #FBFBFB;
+  background: #fbfbfb;
   font-weight: bold;
   font-size: 16px;
   line-height: 32px;
-  color: #1A2F3F;
+  color: #1a2f3f;
   margin-top: 30px;
 }
 
 .bag-table-main i {
-  color: #93B474;
+  color: #93b474;
   font-size: 12px;
   margin-left: 6px;
 }
@@ -11912,7 +11917,7 @@ body {
   transition: all 0.3s ease;
   font-family: "Montserrat";
   line-height: 32px;
-  color: #1A2F3F;
+  color: #1a2f3f;
 }
 
 .bag-table-item:hover {
@@ -11949,12 +11954,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 17px;
-  color: #337D5A;
+  color: #337d5a;
   padding: 15px 23px;
 }
 
 .bag-section-link__catalog:hover {
-  background-color: #337D5A;
+  background-color: #337d5a;
   color: #fff;
 }
 
@@ -11965,7 +11970,7 @@ body {
   line-height: 32px;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #1A2F3F;
+  color: #1a2f3f;
 }
 
 .bag-section__registration-links {
@@ -11973,7 +11978,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
-  color: #1A2F3F;
+  color: #1a2f3f;
   margin-top: 8px;
 }
 
@@ -11982,7 +11987,7 @@ body {
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.01em;
-  color: #337D5A;
+  color: #337d5a;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -12007,8 +12012,288 @@ body {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #337D5A;
+  background-color: #337d5a;
   position: absolute;
+}
+
+.input-section {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.input-section__title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  margin-bottom: 30px;
+}
+
+.input-section__input {
+  width: 410px;
+  height: 47px;
+  padding-left: 12px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  color: #1a2f3f;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.input-section__input:hover {
+  background: rgba(51, 125, 90, 0.1);
+}
+
+.input-section__input:focus {
+  border: 1.5px solid #337d5a;
+}
+
+.input-section__no-remember {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #337d5a;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.input-section__no-remember::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 0;
+  background-color: #337d5a;
+  margin-top: -8px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.input-section__no-remember:hover {
+  color: #337d5a;
+}
+
+.input-section__no-remember:hover::after {
+  width: 100%;
+}
+
+.input-section__go {
+  width: 410px;
+  height: 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #337d5a;
+  border: 1.5px solid #337d5a;
+  margin-bottom: 15px;
+}
+
+.input-section__go:hover {
+  background-color: #fff;
+  color: #17603e;
+}
+
+.input-section__registration {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #337d5a;
+  display: inline-block;
+}
+
+.input-section__registration:hover {
+  color: #337d5a;
+}
+
+.input-section__registration::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 0;
+  background-color: #337d5a;
+  margin-top: -6px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.input-section__registration:hover::after {
+  width: 100%;
+}
+
+.order__go-bag-all {
+  margin-top: 10px;
+}
+
+.orger {
+  padding: 15px 0px 0px 0px;
+}
+
+.order__contact-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  margin-bottom: 18px;
+}
+
+.order__contact-input {
+  display: block;
+  width: 474px;
+  height: 47px;
+  font-family: "Montserrat";
+  line-height: 17px;
+  color: #1a2f3f;
+  padding-left: 17px;
+  margin-bottom: 15px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.order__contact-input:last-of-type {
+  margin-bottom: 45px;
+}
+
+.order__contact-input:hover {
+  background: rgba(51, 125, 90, 0.1);
+}
+
+.order__contact-input:focus {
+  border: 1.5px solid #337d5a;
+}
+
+.registration-section__fop-lawyer-item_order {
+  font-family: "Montserrat";
+  line-height: 17px;
+  color: #1a2f3f;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.registration-section__fop-lawyer-item_order:last-child {
+  margin-bottom: 40px;
+}
+
+.registration-section__adress-inputs_order {
+  width: 474px;
+}
+
+.free {
+  position: absolute;
+  top: -25px;
+  left: 175px;
+}
+
+.free span {
+  position: absolute;
+  left: 6px;
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 12px;
+  top: 7px;
+  color: #ffffff;
+}
+
+.registration-section__fop-lawyer-item-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.registration-section__fop-lawyer-item-order.active .circle span {
+  width: 7px;
+  height: 7px;
+}
+
+.circle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #337d5a;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.circle span {
+  display: block;
+  height: 0;
+  width: 0;
+  background-color: #337d5a;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.order__link-continue {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 17px 74px;
+  margin-top: 28px;
+}
+
+.order__tabs {
+  display: none;
+}
+
+.order__tabs.active {
+  display: block;
+}
+
+.order__tabs {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.order__tabs.active {
+  -webkit-animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-center-registration 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media (min-width: 576px) {
@@ -19063,6 +19348,10 @@ body {
     padding: 7px 11px;
     font-size: 14px;
   }
+
+  .order__tabs {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -19343,6 +19632,18 @@ body {
             justify-content: start;
     margin-top: 10px;
   }
+
+  .input-section {
+    padding: 90px 0 40px 0;
+  }
+
+  .order__contact-input {
+    width: 100%;
+  }
+
+  .registration-section__adress-inputs_order {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -19463,6 +19764,19 @@ body {
 
   .project-ubhdp__link {
     margin-top: 20px;
+  }
+
+  .input-section__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .input-section__input {
+    width: 100%;
+  }
+
+  .input-section__go {
+    width: 100%;
   }
 }
 

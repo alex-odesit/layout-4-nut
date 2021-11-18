@@ -132,6 +132,7 @@ registrationSectionTab.forEach(function(item){
 
 let registrationSectionFopLawyerItem = document.querySelectorAll('.registration-section__fop-lawyer-item');
 let registrationSectionTerminal = document.querySelectorAll('.registration-section__terminals');
+let orderTabs = document.querySelectorAll('.order__tabs');
 registrationSectionFopLawyerItem.forEach(function(item){
    item.addEventListener('click', function(){
       let currentBtn = item;
@@ -144,7 +145,9 @@ registrationSectionFopLawyerItem.forEach(function(item){
       registrationSectionTerminal.forEach(function(item){
          item.classList.remove('active');
       });
-
+      orderTabs.forEach(function(item){
+         item.classList.remove('active');
+      });
       currentBtn.classList.add('active');
       currentTab.classList.add('active');
    });
@@ -161,9 +164,22 @@ filterWrapperArows.forEach(function(items){
       items.classList.add('active');
    })
 })
+
+
+let registrationSectionFopLawyerItemOrder = document.querySelectorAll('.registration-section__fop-lawyer-item-order');
+registrationSectionFopLawyerItemOrder.forEach(function(item){
+   item.addEventListener('click',()=>{
+
+      registrationSectionFopLawyerItemOrder.forEach(function(items){
+         items.classList.remove('active');
+      });
+      item.classList.add('active');
+   })
+})
+
+
 let tabsWrapperProduct = document.querySelectorAll('.product-tabs__item');
 let cartItemsProduct = document.querySelectorAll('.product-tabs-body');
-
 tabsWrapperProduct.forEach(function(item){
    item.addEventListener('click', function(){
       let currentBtn = item;
