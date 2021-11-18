@@ -11990,32 +11990,48 @@ body {
   line-height: 32px;
   letter-spacing: 0.01em;
   color: #337d5a;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.bag-section__registration-links a:hover {
-  color: #3fb37c;
 }
 
 .bag-section__registration-input {
   margin-right: 6px;
+  display: inline-block;
+}
+
+.bag-section__registration-input::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #337d5a;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.bag-section__registration-input:hover::after {
+  width: 100%;
 }
 
 .bag-section__registration-registration {
   margin-left: 6px;
   display: inline-block;
-  position: relative;
 }
 
 .bag-section__registration-registration::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 0%;
   height: 1px;
   background-color: #337d5a;
-  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.bag-section__registration-registration:hover::after {
+  width: 100%;
 }
 
 .input-section {
