@@ -12364,6 +12364,17 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.parol-section__input:hover {
+  background: rgba(51, 125, 90, 0.1);
+}
+
+.parol-section__input:focus {
+  border: 1.5px solid #337d5a;
 }
 
 .parol-section__link {
